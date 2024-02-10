@@ -1,0 +1,12 @@
+let mmddyy1 =document.getElementById("mmddyy1");
+let mmddyy2=document.querySelector("#mmddyy2");
+let ddmmyy1 =document.querySelector("#date3");
+let ddmmyy2 =document.querySelector("#date4");
+let newdate = new Date()
+let cday= newdate.getDate();
+let cmonth=newdate.getMonth();
+let cyear = newdate.getFullYear();
+mmddyy1.innerHTML=(`${cmonth}-${cday}-${cyear}`)
+mmddyy2.innerHTML=(`${cmonth}/${cday}/${cyear}`)
+ddmmyy1.innerHTML=(`${cday}-${cmonth}-${cyear}`)
+ddmmyy2.innerHTML=(`${cday}/${cmonth}/${cyear}`)
